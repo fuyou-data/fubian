@@ -1,0 +1,225 @@
+.iconfont {
+  fill: currentColor;
+}
+.main-btn {
+  width: 180px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+}
+.main-btn:hover {
+  background: #4BE3CF;
+  color: #fff;
+}
+.main-btn:active {
+  background: #34B7B9;
+  color: #fff;
+}
+.main-btn:focus {
+  background: #34B7B9;
+  color: #fff;
+  outline: none;
+}
+.main-btn.is-disabled {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn.is-disabled:hover {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn-primary {
+  width: 180px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  background: #1DE3C4;
+}
+.main-btn-primary:hover {
+  background: #4BE3CF;
+  color: #fff;
+}
+.main-btn-primary:active {
+  background: #34B7B9;
+  color: #fff;
+}
+.main-btn-primary:focus {
+  background: #34B7B9;
+  color: #fff;
+  outline: none;
+}
+.main-btn-primary.is-disabled {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn-primary.is-disabled:hover {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn-alzheimer {
+  width: 180px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  min-width: 120px;
+  width: auto;
+  background: #41D7C3;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+.main-btn-alzheimer:hover {
+  background: #4BE3CF;
+  color: #fff;
+}
+.main-btn-alzheimer:active {
+  background: #34B7B9;
+  color: #fff;
+}
+.main-btn-alzheimer:focus {
+  background: #34B7B9;
+  color: #fff;
+  outline: none;
+}
+.main-btn-alzheimer.is-disabled {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn-alzheimer.is-disabled:hover {
+  background: #DDD;
+  color: #fff;
+}
+.main-btn-dark {
+  width: 180px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  background: #41D7C3;
+}
+.main-btn-dark:hover {
+  background: #4BE3CF !important;
+  color: #fff !important;
+}
+.main-btn-dark:active {
+  background: #34B7B9 !important;
+  color: #fff !important;
+}
+.main-btn-dark:focus {
+  background: #34B7B9 !important;
+  color: #fff !important;
+  outline: none;
+}
+.main-btn-dark.is-disabled {
+  background: #DDD !important;
+  color: #fff !important;
+}
+.main-btn-dark.is-disabled:hover {
+  background: #DDD !important;
+  color: #fff !important;
+}
+.result-btn {
+  padding: 0 20px;
+  line-height: 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 20px;
+}
+.result-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.result-btn:active {
+  border: 1px solid #34B7B9;
+  color: #fff;
+}
+.result-btn:focus {
+  background: #34B7B9;
+  color: #fff;
+  outline: none;
+}
+.position-bottom {
+  position: fixed;
+  bottom: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ball {
+  width: 110vh;
+  height: 110vh;
+  border-radius: 50%;
+}
+.bg-ball {
+  position: relative;
+}
+.bg-ball::before {
+  content: "";
+  position: absolute;
+  width: 110vh;
+  height: 110vh;
+  border-radius: 50%;
+  background: linear-gradient(244deg, rgba(255, 255, 255, 0) 0%, #4BDDC6 100%);
+}
+.bg-ball::after {
+  content: "";
+  position: absolute;
+  width: 110vh;
+  height: 110vh;
+  border-radius: 50%;
+  background: linear-gradient(16deg, rgba(255, 255, 255, 0) 0%, #4BDDC6 100%);
+}
+.icon {
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+button {
+  outline: none;
+}
+.login-message-box {
+  min-width: 542px;
+  border-radius: 20px;
+}
+.login-message-box .el-message-box__content {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 65px;
+}
+.login-message-box .el-button--default {
+  width: 78px;
+  height: 32px;
+  background: #34B7B9;
+  border-radius: 6px;
+  border: #34B7B9;
+}
+.login-message-box .el-button--default:focus {
+  outline: none;
+}
+.el-radio:last-child {
+  margin-right: auto;
+}
+.el-radio__inner {
+  width: 16px;
+  height: 16px;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #34B7B9;
+  background: #34B7B9;
+}
+.el-radio__label {
+  font-size: 16px;
+}
+.el-radio__input.is-checked + .el-radio__label {
+  color: #34B7B9;
+}

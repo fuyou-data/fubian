@@ -1,0 +1,311 @@
+@green1: #34B7B9;
+@green2: #39CACC;
+@green3: #2B9799;
+@grey1: #DDD;
+@grey2: #D6D9D9;
+
+.iconfont {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+button:focus {
+  outline: none;
+}
+/*****************el-butto******************/
+.batch-change-btn (@color) {
+  background-color: @color;
+  border-color: @color;
+  color: #fff;
+}
+.batch-change-btn-plain (@color) {
+  border-color: @color;
+  background: none;
+  color: @color;
+}
+.el-button {
+  color: #666;
+  font-weight: 400;
+  border-radius: 2px;
+  border-color: @grey2;
+  &.btn-normal {
+    padding: 7px 20px;
+  }
+  &.is-plain:hover, &:hover {
+    border-color: #999;
+    color: #999;
+  }
+  &.is-plain:focus, &:focus {
+    border-color: #333;
+    color: #333;
+  }
+  &:hover, &:focus {
+    background-color: #fff;
+  }
+}
+.el-button--success, .el-button--primary {
+  .batch-change-btn(@green1);
+  &:hover {
+    .batch-change-btn(@green2);
+  }
+  &:focus {
+    .batch-change-btn(@green3);
+  }
+  &.is-plain {
+    .batch-change-btn-plain(@green1);
+    &:hover {
+      .batch-change-btn-plain(@green2);
+    }
+    &:focus {
+      .batch-change-btn-plain(@green3);
+    }
+    &.is-disabled {
+      .batch-change-btn-plain(@grey1);
+      &:hover {
+        .batch-change-btn-plain(@grey1);
+      }
+      &:focus {
+        .batch-change-btn-plain(@grey1);
+      }
+      &:active {
+        .batch-change-btn-plain(@grey1);
+      }
+    }
+  }
+  &.is-disabled {
+    .batch-change-btn(@grey1);
+    &:hover {
+      .batch-change-btn(@grey1);
+    }
+    &:focus {
+      .batch-change-btn(@grey1);
+    }
+    &:active {
+      .batch-change-btn(@grey1);
+    }
+  }
+}
+
+.el-button--text {
+  font-weight: 500;
+  color: @green1;
+  border: none;
+  &:hover {
+    color: @green2;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &:focus {
+    color: @green3;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &.bg-green {
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover, &:focus {
+      background-color: #eff9fa;
+    }
+  }
+  &.bg-green {
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover, &:focus {
+      background-color: #eff9fa;
+    }
+  }
+
+  &.text-red {
+    color: #F75234;
+  }
+}
+.el-button+.el-button.btn-whole-dashed {
+  margin-left: 0 !important;
+}
+.btn-whole-dashed {
+  width: 100%;
+  padding: 8px;
+  color: #666;
+  border: 1px dashed @grey2;
+  border-radius: 2px;
+  &:hover, &:focus {
+    background: none;
+  }
+}
+
+/*****************el-input******************/
+.el-input__inner {
+  border: 1px solid @grey2;
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: @green1;
+}
+
+.el-input__inner {
+  border-radius: 2px;
+}
+
+.el-textarea__inner {
+  border-radius: 2px;
+  border-color: @grey2;
+  &:focus {
+    border-color: @green1;
+  }
+}
+
+/*****************el-select******************/
+.el-select {
+  &:hover {
+    .el-input__inner {
+      .el-input__inner;
+    }
+  }
+  .el-input {
+    .el-select__caret {
+      color: @grey2;
+    }
+    &.is-focus .el-input__inner {
+      border-color: @grey2;
+    }
+  }
+  .el-input__inner:focus {
+    border-color: @green1;
+  }
+}
+.el-select-dropdown__item {
+  &.selected {
+    color: @green1;
+  }
+  &.hover {
+    color: #fff;
+    background-color: @green1;
+  }
+  &:hover {
+    color: #fff;
+    background-color: @green1;
+  }
+}
+
+/*****************el-checkbox******************/
+.el-checkbox__inner {
+  border-color: @grey2;
+}
+.el-checkbox__inner:hover {
+  border-color: @green1;
+}
+.el-checkbox__input {
+  &.is-checked {
+    .el-checkbox__inner {
+      .batch-change-btn(@green1);
+    }
+  }
+  &.is-indeterminate {
+    .el-checkbox__inner {
+      .batch-change-btn(@green1);
+    }
+  }
+  &.is-focus {
+    .el-checkbox__inner {
+      border-color: @green1;
+    }
+  }
+  &.is-checked+.el-checkbox__label {
+    color: @green1;
+  }
+}
+
+/*****************el-radio******************/
+.el-radio__inner:hover {
+  border-color: @green1;
+}
+.el-radio__input.is-checked+.el-radio__label {
+  color: @green1;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  .batch-change-btn(@green1);
+}
+
+/*****************el-pagination******************/
+.el-pager {
+  li {
+    &:hover {
+      color: @green1;
+    }
+    &.active {
+      color: #fff;
+      background-color: @green1;
+      border-radius: 4px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.el-pagination button:hover {
+  color: @green1;
+}
+.el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: @green1;
+}
+.el-pagination.is-background .el-pager li:not(.disabled) {
+  &.active {
+    background-color: @green1;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    color: @green1;
+  }
+}
+
+/*****************el-dialog******************/
+.el-dialog {
+  border-radius: 8px;
+}
+
+.el-message-box{
+  width: 560px;
+  height: 246px;
+  background: #FFFFFF;
+  opacity: 1;
+  border-radius: 8px;
+  padding: 20px;
+  .el-message-box__header{
+    display: none;
+  }
+  .el-message-box__btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .el-button{
+      border: 1px solid #34B7B9;
+      color: #34B7B9;
+      font-weight: normal;
+      width: 78px;
+      height: 32px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .el-button--default.el-button--primary {
+      color: #fff;
+      background: #34B7B9;
+    }
+  }
+  .el-message-box__content{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #666666;
+  }
+  .el-message-box__status{
+    display: none;
+  }
+}
